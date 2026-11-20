@@ -1,0 +1,18 @@
+services:
+  api:
+    build: .
+    container_name: harcelement-api
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
+
+  mongo:
+    image: mongo:7
+    container_name: harcelement-mongo
+    ports:
+      - "27018:27017"   # 27018 pour ne pas entrer en conflit avec mongo-harcelement (27017)
+    volumes:
+      - mongo_compose_data:/data/db
+
+volumes:
+  mongo_compose_data:

@@ -1,0 +1,35 @@
+{
+  "best_model": "MultinomialNB",
+  "n_train": 4590,
+  "n_test": 1148,
+  "models": {
+    "LogisticRegression": {
+      "metrics": {
+        "accuracy": 0.9041811846689896,
+        "precision": 0.8948170731707317,
+        "recall": 0.9347133757961783,
+        "f1": 0.9143302180685359,
+        "roc_auc": 0.9624724399804018,
+        "train_time_s": 3.0741315999998733,
+        "predict_ms_per_message": 0.014952787456384785
+      },
+      "best_params": {
+        "clf__C": 5.0
+      }
+    },
+    "MultinomialNB": {
+      "metrics": {
+        "accuracy": 0.9067944250871081,
+        "precision": 0.8952959028831563,
+        "recall": 0.9394904458598726,
+        "f1": 0.9168609168609169,
+        "roc_auc": 0.970452596766291,
+        "train_time_s": 2.520318800000041,
+        "predict_ms_per_message": 0.009375174215818124
+      },
+      "best_params": {
+        "clf__alpha": 0.1
+      }
+    }
+  }
+}
